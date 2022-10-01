@@ -1,0 +1,28 @@
+create table covid_sample
+    > (
+    > Country string,
+    > Confirmed int,
+    > Deaths int,
+    > Recovered int,
+    > Active int,
+    > New_cases int,
+    > New_deaths int,
+    > New_recovered int,
+    > Deaths_cases float,
+    > Recovered_cases float,
+    > Deaths_recovered float,
+    > Confirmed_last_week int,
+    > 1_week_change int,
+    > 1_week_per_increase float,
+    > WHO_region string)
+    > row format delimited
+    > fields terminated by ',';
+    set hive.cli.print.header = true;
+select * from covid_sample;
+Select * from covid_sample
+    > where Country = Australia
+    select * from covid_sample
+    > where deaths<100;
+    Select * from covid_sample
+    > where confirmed=15303;
+    
